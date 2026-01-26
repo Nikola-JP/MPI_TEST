@@ -1,0 +1,16 @@
+{
+  "name": "mpi_test",
+  "version": "1.0.0",
+  "description": "Mock OneDrive tenant and folder structure",
+  "main": "src/server.js",
+  "scripts": {
+    "db:init": "node scripts/dbInit.js",
+    "dev": "node src/server.js",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0"
+  }
+}

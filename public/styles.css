@@ -1,0 +1,118 @@
+:root {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+body {
+  margin: 0;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #2563eb;
+  color: #fff;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-controls input {
+  width: 120px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.user-controls button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  height: calc(100vh - 56px);
+}
+
+.sidebar {
+  background: #fff;
+  padding: 16px;
+  border-right: 1px solid #e5e7eb;
+  overflow-y: auto;
+}
+
+.content {
+  padding: 24px;
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tree-node {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.tree-node:hover {
+  background: #e5e7eb;
+}
+
+.tree-node.selected {
+  background: #dbeafe;
+}
+
+.tree-children {
+  margin-left: 16px;
+  border-left: 1px dashed #cbd5f5;
+  padding-left: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.folder-meta {
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+.permissions {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.permissions th,
+.permissions td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: left;
+}
+
+.error {
+  color: #dc2626;
+  margin-top: 12px;
+}
