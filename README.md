@@ -15,7 +15,7 @@ Mock OneDrive tenant + drive implementation for the faculty project.
    ```
 2. Create the database and schema:
    ```bash
-   mysql -h "$DB_HOST" -u "$DB_USER" -p "$DB_NAME" < scripts/init_db.sql
+   mysql -h "$DB_HOST" -u "$DB_USER" -p --protocol=TCP "$DB_NAME" < scripts/init_db.sql
    ```
 3. Copy and edit env file:
    ```bash
@@ -36,7 +36,7 @@ Set the following values in `.env`:
 - `DB_HOST`
 - `DB_PORT`
 - `DB_USER`
-- `DB_PASSWORD`
+- `DB_PASS`
 - `DB_NAME`
 
 The seed script will create a tenant, root structure, and users with example permissions.

@@ -4,6 +4,7 @@
   "description": "Mock OneDrive tenant and folder structure",
   "main": "src/server.js",
   "scripts": {
+    "db:init": "node scripts/dbInit.js",
     "dev": "node src/server.js",
     "seed": "node scripts/seed.js"
   },
