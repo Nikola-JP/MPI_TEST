@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VeleriDrive Mock OneDrive</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="brand">VeleriDrive</div>
+    <div class="user-controls">
+      <label for="userId">x-user-id</label>
+      <input id="userId" type="number" placeholder="Enter user id" />
+      <button id="loadRoot">Load</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="sidebar">
+      <h2>Folders</h2>
+      <div id="tree" class="tree"></div>
+    </section>
+    <section class="content">
+      <h2 id="folderTitle">Select a folder</h2>
+      <div id="folderMeta" class="folder-meta"></div>
+
+      <h3>Permissions</h3>
+      <table class="permissions">
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody id="permissionBody"></tbody>
+      </table>
+      <p id="error" class="error"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
