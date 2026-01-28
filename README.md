@@ -15,7 +15,11 @@ Mock OneDrive tenant + drive implementation for the faculty project.
    ```
 2. Create the database and schema:
    ```bash
-   mysql -h "$DB_HOST" -u "$DB_USER" -p --protocol=TCP "$DB_NAME" < scripts/init_db.sql
+   sudo apt update
+   sudo apt install -y default-mysql-client
+   ```
+   ```bash
+   mysql -h "student.veleri.hr" -u "npavecic" -p --protocol=TCP "npavecic" < scripts/init_db.sql
    ```
 3. Copy and edit env file:
    ```bash
